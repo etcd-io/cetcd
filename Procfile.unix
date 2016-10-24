@@ -1,0 +1,3 @@
+etcd: etcd --name infra1 --listen-client-urls unix://localhost:2379 --advertise-client-urls unix://localhost:2379 --listen-peer-urls unix://localhost:2380 --initial-advertise-peer-urls unix://localhost:2380 --initial-cluster-token etcd-cluster-1 --initial-cluster 'infra1=unix://localhost:2380' --initial-cluster-state new --enable-pprof
+
+cetcd: ./cmd/cetcd/cetcd -etcd unix://localhost:2379

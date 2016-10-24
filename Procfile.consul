@@ -1,0 +1,2 @@
+# by default, the consul docker image starts in 'dev' mode and doesn't touch disk
+consul: docker run -p 127.0.0.1:8500:8500  consul agent -data-dir=/consul/data -server  -client 0.0.0.0 -bootstrap -advertise 127.0.0.1
