@@ -1,0 +1,6 @@
+package: github.com/coreos/cetcd
+import:
+- package: github.com/coreos/etcd
+  version: v3.0.15
+  subpackages:
+  - clientv3
